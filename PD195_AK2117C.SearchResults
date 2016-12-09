@@ -1,0 +1,14 @@
+---- Record_Mode Æ¥Åä (14 in 5 ÎÄ¼þ) ----
+E:\Actions\FW\AK2117\PD195_AK2117C\case\inc\ap_cfg.h:135:    value_set_t   Record_Mode;
+E:\Actions\FW\AK2117\PD195_AK2117C\psp_rel\inc\comval.h:178:        uint8 Record_Mode;
+E:\Actions\FW\AK2117\PD195_AK2117C\psp_rel\inc\comval.h:205:        (val).Record_Mode = 0;\
+E:\Actions\FW\AK2117\PD195_AK2117C\case\ap\ap_main\main.c:97:        memcpy(&g_modifyval.Record_Mode, &sd_read_buf[256], sizeof(value_set_t));
+E:\Actions\FW\AK2117\PD195_AK2117C\case\ap\ap_main\main.c:216:		g_comval.Record_Mode = g_modifyval.Record_Mode.DefValue;
+E:\Actions\FW\AK2117\PD195_AK2117C\case\ap\common\pedo_ui.c:140:	    if(g_comval.Record_Mode == 0)
+E:\Actions\FW\AK2117\PD195_AK2117C\case\ap\common\pedo_ui.c:144:	    else if(g_comval.Record_Mode == 1)
+E:\Actions\FW\AK2117\PD195_AK2117C\case\ap\common\pedo_ui.c:163:	    if(g_comval.Record_Mode == 0)
+E:\Actions\FW\AK2117\PD195_AK2117C\case\ap\common\pedo_ui.c:167:	    else if(g_comval.Record_Mode == 1)
+E:\Actions\FW\AK2117\PD195_AK2117C\case\ap\common\pedo_ui.c:171:	    else if(g_comval.Record_Mode == 2)
+E:\Actions\FW\AK2117\PD195_AK2117C\case\ap\ap_setting\ui_clock_test.c:410:	tmp = g_comval.Record_Mode;
+E:\Actions\FW\AK2117\PD195_AK2117C\case\ap\ap_setting\ui_clock_test.c:414:	menu.active = g_comval.Record_Mode;
+E:\Actions\FW\AK2117\PD195_AK2117C\case\ap\ap_setting\ui_clock_test.c:419:	g_comval.Record_Mode = menu.active;

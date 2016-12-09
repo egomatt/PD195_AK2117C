@@ -1,0 +1,78 @@
+### uVision2 Project, (C) Keil Software
+### Do not modify !
+
+ cExt (*.c)
+ aExt (*.s*; *.src; *.a*)
+ oExt (*.obj)
+ lExt (*.lib)
+ tExt (*.txt; *.h; *.inc)
+ pExt (*.plm)
+ CppX (*.cpp)
+ DaveTm { 0,0,0,0,0,0,0,0 }
+
+Target (ui_unicode), 0x0001 // Tools: 'MCS-251'
+GRPOPT 1,(cfg),0,0,0
+GRPOPT 2,(Common Source),0,0,0
+GRPOPT 3,(Sdrv_Rcode),0,0,0
+GRPOPT 4,(Sdrv_BankA),0,0,0
+GRPOPT 5,(Sdrv_BankB),0,0,0
+GRPOPT 6,(Hdrv_Rcode),0,0,0
+GRPOPT 7,(Hdrv_BankB),0,0,0
+GRPOPT 8,(Output),0,0,0
+GRPOPT 9,(lib),0,0,0
+GRPOPT 10,(inc),0,0,0
+
+OPTFFF 1,1,5,0,0,0,0,0,<.\ui_uicode.lin><ui_uicode.lin> 
+OPTFFF 2,2,2,0,0,0,0,0,<.\Drv_Entrance.A51><Drv_Entrance.A51> 
+OPTFFF 2,3,2,0,0,0,0,0,<.\Drv_BankApi.A51><Drv_BankApi.A51> 
+OPTFFF 2,4,2,0,0,0,0,0,<.\Drv_header.A51><Drv_header.A51> 
+OPTFFF 2,5,2,0,0,0,0,0,<.\L251BANK.A51><L251BANK.A51> 
+OPTFFF 2,6,2,0,0,0,0,0,<.\UI_bnkif.A51><UI_bnkif.A51> 
+OPTFFF 2,7,2,0,0,0,0,0,<.\Drv_globalVars.A51><Drv_globalVars.A51> 
+OPTFFF 3,8,1,0,0,0,0,0,<.\Sdrv\sdrv_deallcmpara.c><sdrv_deallcmpara.c> 
+OPTFFF 3,9,1,0,0,0,0,0,<.\Sdrv\sdrv_functions.c><sdrv_functions.c> 
+OPTFFF 4,10,1,0,0,0,0,0,<.\Sdrv\Sdrv_clrscreen.c><Sdrv_clrscreen.c> 
+OPTFFF 4,11,1,0,0,0,0,0,<.\Sdrv\Sdrv_putsdimage.c><Sdrv_putsdimage.c> 
+OPTFFF 4,12,1,0,0,0,0,0,<.\Sdrv\sdrv_Thai.c><sdrv_Thai.c> 
+OPTFFF 4,13,1,0,0,0,0,0,<.\Sdrv\sdrv_TrunArabicToUn.c><sdrv_TrunArabicToUn.c> 
+OPTFFF 5,14,1,0,0,0,0,0,<.\Sdrv\sdrv_Arabic.c><sdrv_Arabic.c> 
+OPTFFF 5,15,1,0,0,0,0,0,<.\Sdrv\sdrv_bidi_isnsm.c><sdrv_bidi_isnsm.c> 
+OPTFFF 5,16,1,0,0,0,0,0,<.\Sdrv\sdrv_charoutrect.c><sdrv_charoutrect.c> 
+OPTFFF 5,17,1,0,0,0,0,0,<.\Sdrv\sdrv_getstringlength.c><sdrv_getstringlength.c> 
+OPTFFF 5,18,1,0,0,0,0,0,<.\Sdrv\sdrv_getstringlengthExt.c><sdrv_getstringlengthExt.c> 
+OPTFFF 5,19,1,0,0,0,0,0,<.\Sdrv\sdrv_init.c><sdrv_init.c> 
+OPTFFF 5,20,1,0,0,0,0,0,<.\Sdrv\Sdrv_Invert.c><Sdrv_Invert.c> 
+OPTFFF 5,21,1,0,0,0,0,0,<.\Sdrv\sdrv_putchar.c><sdrv_putchar.c> 
+OPTFFF 5,22,1,0,0,0,0,0,<.\Sdrv\sdrv_puts.c><sdrv_puts.c> 
+OPTFFF 5,23,1,0,0,0,0,0,<.\Sdrv\Sdrv_RectFill.c><Sdrv_RectFill.c> 
+OPTFFF 5,24,1,0,0,0,0,0,<.\Sdrv\sdrv_regioncopy.c><sdrv_regioncopy.c> 
+OPTFFF 5,25,1,0,0,0,0,0,<.\Sdrv\sdrv_SubArabic.c><sdrv_SubArabic.c> 
+OPTFFF 5,26,1,0,0,0,0,0,<.\Sdrv\sdrv_getfontpoint.c><sdrv_getfontpoint.c> 
+OPTFFF 6,27,1,0,0,0,0,0,<.\Hdrv\Hdrv_delayms.c><Hdrv_delayms.c> 
+OPTFFF 6,28,1,0,0,0,0,0,<.\Hdrv\Hdrv_HardDeal.c><Hdrv_HardDeal.c> 
+OPTFFF 6,29,1,0,0,0,0,0,<.\Hdrv\Hdrv_HardInit.c><Hdrv_HardInit.c> 
+OPTFFF 6,30,1,0,0,0,0,0,<.\Hdrv\Hdrv_HardLogical.c><Hdrv_HardLogical.c> 
+OPTFFF 8,31,5,0,0,0,0,0,<.\UI_Release\obj\drv_ui.MAP><drv_ui.MAP> 
+OPTFFF 9,32,4,0,0,0,0,0,<..\..\..\psp_rel\lib\LIBC.LIB><LIBC.LIB> 
+OPTFFF 9,33,4,0,0,0,0,0,<..\..\..\psp_rel\lib\actos30api.LIB><actos30api.LIB> 
+OPTFFF 10,34,5,0,0,0,0,0,<..\..\inc\display.h><display.h> 
+OPTFFF 10,35,5,0,0,0,0,0,<.\inc\Hdrv_S7565.h><Hdrv_S7565.h> 
+OPTFFF 10,36,5,0,0,0,0,0,<.\inc\Drv_S7565.h><Drv_S7565.h> 
+
+
+TARGOPT 1, (ui_unicode)
+ CLK251=16000000
+  OPTTT 0,1,1,0
+  OPTHX 1,65535,0,0,0
+  OPTLX 120,65,8,<.\UI_Release\list\>
+  OPTOX 16
+  OPTLT 1,1,1,0,1,1,0,1,0,0,0,0
+  OPTXL 1,1,1,1,1,1,1,0,0
+  OPTFL 0,0,1
+  OPTDL (S251.DLL)(-Flip251)(DP51.DLL)(-p251S -dactsim)(S251.DLL)()(TP51.DLL)(-p251S)
+  OPTDBG 47610,1,()()()()(.\bromsim.dini.ini)()()()()() (C:\Program Files\ATD_V2.0\UDI\ActsAGDI.dll)()()()
+  OPTDF 0x0
+  OPTLE <>
+  OPTLC <>
+EndOpt
+
